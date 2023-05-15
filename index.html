@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/de03bdee2e.js" crossorigin="anonymous"></script>
+    <title>staticwebpage</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo"><span>M</span>ikiyas.</a>
+                <ul id="sidemenu">
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#about">About</a></li>
+                 <li><a href="#profolio">Profolio</a></li>
+                 <li><a href="#contact">Contact</a></li>
+                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="image-hover"></div>
+           
+          
+            <div class="header-text">
+    
+                <h1>Hi, I'm <span>Mikiyas Ayele</span></h1>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------about------------->
+    <div id="about">
+        <div class="container">
+            <h1 class="sub-title">About</h1>
+            <p class="bio">Growing up I was always interested in the sciences and technology. 
+                In high school, I excelled in math and science classes, which led me to pursue a degree in engineering. 
+                indeed I am studying electrical engineering, I am very enthusiastic about coding so I 
+                have started taking online courses which really help me to begin my journey as a programmer. 
+                After I finish my degree, I plan to work as a developer and help improve technology in my country.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Language</p>
+                    <p class="tab-links" onclick="opentab('experience')">Extracurricular</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span class="mini-title">Amharic </span><br>Native</li>
+                            <li><span>English</span><br>Advanced</li>
+
+                        </ul>
+                    </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jul 2019 - Sep 2019</span><br>Annual Summer Voluntary Service </li>
+                                <li><span>Nov 2018 - Sep 2022</span><br>Kidane Mihret Students Self-Help Association (KIMSSA)</li>
+                            </ul>
+                        </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Sep 2016 - Jul 2018</span><br>High school Diploma</li>
+                                    <li><span>Oct 2018 - Jul 2023</span><br>Bachelor of Electrical Engineering</li>
+                                </ul>
+                            </div>
+        </div>
+    </div>
+    <!-- Profolio -->
+    <div id="profolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/first_deploy.png" alt="my-first-project">
+                    <div class="layer">
+                        <h3>Mobile App</h3>
+                        <p>My First Mobile App to compute studnts CGPA.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/AI_proj.png" alt="my-second-project">
+                    <div class="layer">
+                        <h3>Web Application</h3>
+                        <p>AI based web application to detect fake news.</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- contact -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>mikiyasayele2000@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>+251953419910</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mikiyas-ayele-94b3911b1/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <a href="images/my_Resume.pdf" download class="cv"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="name" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <textarea name="msg" id="msg" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Mike@2023</p>
+    </div>
+   </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
